@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+    display: flex;
+    background-color: #fd9d69;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+  
+    display: flex;
+  background-color: #929b89;
+  }
+  
+  .navbar {
+    height: 80px;
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 0 20px;
+    }
+    
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    a {
+      text-decoration: none;
+    color: #929b89;
+    padding: 8px 12px;
+    border-radius: 10px;      
+    transition: background-color 0.3s ease;
+    font-size: 30px;
+  }
+  
+  a:hover {
+    background-color: #434c3b;  
+  
+      text-decoration: none;
+      color: black;
+      font-size: 30px;
+    }
+  ul {
+      list-style-type: none; 
+      padding: 0;
+      margin: 0;
+      display: flex;       
+    }
+  
+    li {
+      margin-right: 20px;    
+    }
+  
+    a {
+      text-decoration: none; 
+      color: black;  }        
+  
+    li:last-child {
+      margin-right: 0;
+    }
+  
+    .contact {display: flex;
+      justify-content: end}
+
+      .homepic {display: flex;
+    justify-content: center;}
+
+    header, footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #929b89;
+        color: #fd9d69;
+    }
+
+    .paragraph-drinks, .drinks-prices {
+        display: flex;
+        flex-flow: row wrap;
+        color: white;
+    }
+
+    .paragraph-reviews, .testi {
+        display: flex;
+        flex-flow: row wrap;
+        color: white;
+    }
+
+    .drinks {
+        display: flex;
+        flex-flow: row wrap;
+        height: 10%;
+        width: 20%;
+    }
+
+    .testi {
+        display: flex;
+        flex-flow: row wrap;
+        max-height: 10%;
+        min-width: 10%;
+    }
