@@ -3,7 +3,6 @@
 
 
 body {
-    display: flex;
     background-color: #fd9d69;
     font-family: "Roboto", sans-serif;
 }
@@ -12,20 +11,33 @@ nav {
   
     display: flex;
   background-color: #929b89;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  }
+
+  .brand-name {
+    width: 110%;
+    padding-left: 5%;
   }
   
+  .brand-logo {
+    width: 17%;
+    margin-top: 10px;
+   }
+
   .navbar {
     height: 80px;
       display: flex;
       justify-content: space-between; 
       align-items: center;
-      padding: 0 20px;
+      width: 100%;
     }
     
     .nav-links {
       list-style: none;
       display: flex;
-      gap: 20px;
+      justify-content: flex-end;
       margin: 0;
       padding: 0;
     }
@@ -33,7 +45,7 @@ nav {
     a {
       text-decoration: none;
     color: #929b89;
-    padding: 8px 12px;
+    padding: 8px 8px;
     border-radius: 10px;      
     transition: background-color 0.3s ease;
     font-size: 30px;
@@ -48,22 +60,16 @@ nav {
     }
   ul {
       list-style-type: none; 
-      padding: 0;
-      margin: 0;
-      display: flex;       
-    }
-  
-    li {
-      margin-right: 20px;    
+      display: flex;   
+      width: 100%;  
     }
   
     a {
+      display: flex;
       text-decoration: none; 
-      color: black;  }        
-  
-    li:last-child {
-      margin-right: 0;
-    }
+      color: #434c3b;
+      width: 100%;
+    }        
   
     .contact {display: flex;
       justify-content: end}
@@ -74,32 +80,76 @@ nav {
     header, footer {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         background-color: #929b89;
         color: #fd9d69;
+        font-size: 2rem;
     }
 
-    .paragraph-drinks, .drinks-prices {
+    .socials-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .paragraph-drinks {
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
+        font-size: 1.75rem;
         color: white;
+        padding: 5%;
     }
 
-    .paragraph-reviews, .testi {
+    .drinks-prices {
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-around;
+        font-size: 1.5rem;
         color: white;
+        padding-bottom: 5%;
     }
 
-    .drinks {
+    .paragraph-reviews {
         display: flex;
         flex-flow: row wrap;
-        height: 10%;
-        width: 20%;
+        justify-content: center;
+        font-size: 1.75rem;
+        color: white;
+        padding: 5%;
     }
 
     .testi {
         display: flex;
         flex-flow: row wrap;
-        max-height: 10%;
-        min-width: 10%;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 5%;
+    }
+
+    .drinks {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: 25%;
+        max-width: auto;
+        object-fit: cover;
+    }
+
+    .drink {
+        width: 30%;
+    }
+
+    .rev {
+        width: 30%;
+    }
+
+    .revtext {
+        justify-self: left;
+        align-self: center;
+        width: 40%;
+        font-size: 2.2rem;
     }
