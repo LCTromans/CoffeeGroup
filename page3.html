@@ -6,17 +6,28 @@
     <title>Pastries Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("show");
+  }
+</script>
+
 <body>
-    <nav class="navbar">
-     <div class="brand-name"><img class="brand-logo" src="logo.png" alt=""></div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="page2.html">Drinks menu</a></li>
-          <li><a href="page3.html">Pastries menu</a></li>
-          <li><a href="Page4.html">Reviews</a></li>
-          <li><a href="page5.html">About us</a></li>
-        </ul>
-      </nav>
+  <nav class="navbar">
+    <div class="brand-name">
+      <img class="brand-logo" src="logo.png" alt="Black Mud Coffee logo">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="page2.html">Drinks menu</a>
+      <a href="page3.html">Pastries menu</a>
+      <a href="Page4.html">Reviews</a>
+      <a href="page5.html">About us</a>
+    </div>
+  </nav>
     
       <header class="bg-warning text-white text-center py-4">
         <h1>Pastries Menu</h1>
